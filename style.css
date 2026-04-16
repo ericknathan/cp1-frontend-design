@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Limelight", sans-serif;
+}
+
+header {
+  color: #ffffff;
+  background-color: #064661;
+
+  width: 100%;
+  padding: 42px 76px;
+}
+
+header h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  width: 100vw;
+}
+
+main h2 {
+  color: #064661;
+
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+main section {
+  padding: 0 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+main #hero {
+  width: 100%;
+}
+
+main #beneficios .listabeneficios {
+  display: flex;
+  gap: 55px;
+}
+
+main #beneficios .listabeneficios p,
+main #beneficios .listabeneficios img {
+  width: 100%;
+}
+
+main #precos .listaprecos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+main #precos .listaprecos div {
+  padding: 32px;
+  border-radius: 10px;
+
+  border: 3px solid #064661;
+  background-color: #99bedf;
+}
+
+main #precos .listaprecos div:nth-child(even) {
+  background-color: #064661b2;
+  color: #ffffff;
+}
+
+main #precos .listaprecos div h3 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+main #precos .listaprecos div span {
+  font-size: 26px;
+}
+
+main #galeria .listagaleria {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px;
+}
+
+main #galeria .listagaleria img {
+  width: 100%;
+  border-radius: 50px;
+}
+
+main #contato ul {
+  display: grid;
+  gap: 16px;
+  list-style: none;
+}
+
+footer {
+  background-color: #064661;
+
+  width: 100%;
+  padding: 24px 72px;
+  margin-top: 66px;
+
+  display: grid;
+  text-align: center;
+}
+
+footer span {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 24px 0;
+  }
+
+  main section {
+    padding: 0 24px;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  main #hero {
+    min-height: 60vh;
+    object-fit: cover;
+  }
+  main #beneficios .listabeneficios {
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+
+  main #precos .listaprecos {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  main #galeria .listagaleria {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  main #galeria .listagaleria img {
+    border-radius: 24px;
+  }
+
+  footer {
+    padding: 24px;
+  }
+}
